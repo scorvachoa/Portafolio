@@ -1,6 +1,6 @@
-# Portafolio — Smith Corvacho Alvarez
+# Portafolio
 
-Sitio web estático del portafolio profesional de Smith Corvacho Alvarez, enfocado en:
+Sitio web estático del portafolio profesional, enfocado en:
 
 - Administración web
 - SEO y crecimiento de plataformas digitales
