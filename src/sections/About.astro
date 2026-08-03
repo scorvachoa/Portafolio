@@ -1,0 +1,86 @@
+---
+/**
+ * Sobre mí: retrato, bio y datos destacados.
+ */
+import site from '@/data/site.json';
+import { asset } from '@/utils/asset';
+import Icon from '@/components/Icon.astro';
+import Reveal from '@/components/Reveal.astro';
+
+const highlights = [
+  { icon: 'award', title: '5+ años de experiencia', text: 'En producción audiovisual y contenido digital.' },
+  { icon: 'film', title: '500+ proyectos', text: 'Videos, campañas y series producidas de punta a punta.' },
+  { icon: 'target', title: 'Enfoque en resultados', text: 'Cada pieza nace con una métrica y un objetivo claro.' },
+];
+---
+
+<section id="sobre-mi" class="relative py-24 sm:py-32" aria-label="Sobre mí">
+  <div class="container-page grid items-start gap-16 lg:grid-cols-2 lg:gap-20">
+    {/* Retrato */}
+    <Reveal class="relative order-2 lg:order-1">
+      <div class="relative overflow-hidden rounded-3xl border border-white/10">
+        <img
+          src={asset('/assets/portrait.svg')}
+          alt="Retrato de Smith Corvacho"
+          width="900"
+          height="1200"
+          loading="lazy"
+          class="aspect-[3/4] w-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent" aria-hidden="true" />
+        <div class="absolute bottom-5 left-5 flex items-center gap-3 rounded-full glass px-4 py-2">
+          <span class="size-2 rounded-full bg-emerald-400 animate-pulse-dot" aria-hidden="true" />
+          <span class="text-xs font-medium text-white/85">{site.availability}</span>
+        </div>
+      </div>
+      <div
+        class="pointer-events-none absolute -right-6 -top-6 -z-10 size-40 rounded-full bg-brand/20 blur-[80px]"
+        aria-hidden="true"
+      />
+    </Reveal>
+
+    {/* Texto */}
+    <div class="order-1 lg:order-2">
+      <Reveal>
+        <span class="chip chip-brand">
+          <span class="size-1.5 rounded-full bg-brand animate-pulse-dot" aria-hidden="true" />
+          Sobre mí
+        </span>
+      </Reveal>
+
+      <Reveal delay="0.05">
+        <h2 class="section-title mt-5">
+          Creo historias visuales que <span class="text-gradient">conectan</span> y
+          <span class="text-gradient">convierten</span>
+        </h2>
+      </Reveal>
+
+      <Reveal delay="0.1">
+        <div class="mt-6 space-y-5 text-base leading-relaxed text-white/60 sm:text-lg">
+          <p>
+            Soy {site.fullName}, Content Creator y Productor Audiovisual con base en {site.location}.
+            Ayudo a marcas y empresas a contar sus historias con contenido que no solo se ve bien:
+            que se ve, se comparte y genera resultados.
+          </p>
+          <p>
+            Domino todo el flujo de producción —concepto, guion, grabación, edición, color y
+            distribución— y entiendo las plataformas como un medio, no como un fin. Cada decisión
+            creativa responde a una estrategia medible.
+          </p>
+        </div>
+      </Reveal>
+
+      <div class="mt-10 grid gap-4 sm:grid-cols-3">
+        {
+          highlights.map((item, index) => (
+            <Reveal delay={0.1 + index * 0.08} class="card p-5">
+              <Icon name={item.icon} size={22} class="text-brand" />
+              <h3 class="mt-4 font-display text-sm font-semibold text-white">{item.title}</h3>
+              <p class="mt-1.5 text-xs leading-relaxed text-white/50">{item.text}</p>
+            </Reveal>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

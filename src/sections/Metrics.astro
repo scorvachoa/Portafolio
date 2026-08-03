@@ -1,0 +1,43 @@
+---
+/**
+ * Métricas: contadores animados con GSAP al entrar en viewport.
+ */
+import metrics from '@/data/metrics.json';
+import Icon from '@/components/Icon.astro';
+import SectionHeading from '@/components/SectionHeading.astro';
+import Reveal from '@/components/Reveal.astro';
+---
+
+<section class="relative py-24 sm:py-32" aria-label="Métricas">
+  <div class="container-page">
+    <div class="flex flex-wrap items-end justify-between gap-8">
+      <SectionHeading eyebrow={metrics.label} title={metrics.title} description={metrics.description} />
+    </div>
+
+    <div class="mt-16 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-5">
+      {
+        metrics.metrics.map((metric, index) => (
+          <Reveal delay={(index % 4) * 0.08} class="card group p-6 sm:p-8">
+            <div class="flex items-center justify-between">
+              <Icon name={metric.icon} size={22} class="text-brand/70" />
+              <span class="size-1.5 rounded-full bg-brand/30 transition-colors duration-300 group-hover:bg-brand" aria-hidden="true" />
+            </div>
+
+            <div class="mt-6 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl">
+              <span
+                data-counter={metric.value}
+                data-decimals={metric.decimals ?? 0}
+                data-suffix={metric.suffix}
+              >
+                0{metric.suffix}
+              </span>
+            </div>
+
+            <p class="mt-2 font-display text-sm font-medium text-white/80">{metric.label}</p>
+            {metric.note && <p class="mt-1 text-xs leading-relaxed text-white/40">{metric.note}</p>}
+          </Reveal>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+{
+  "label": "Proceso",
+  "title": "Un método probado, de la idea al impacto",
+  "description": "Cada proyecto sigue un proceso estructurado que combina estrategia, producción audiovisual y análisis de datos para maximizar el rendimiento del contenido.",
+  "steps": [
+    {
+      "title": "Idea",
+      "description": "Defino el objetivo del contenido y el mensaje principal según la audiencia y la plataforma."
+    },
+    {
+      "title": "Investigación",
+      "description": "Analizo tendencias, referencias, competencia y oportunidades para crear contenido con mayor potencial de alcance."
+    },
+    {
+      "title": "Planificación",
+      "description": "Organizo el recorrido, las tomas, el equipo y el guion técnico para optimizar cada jornada de producción."
+    },
+    {
+      "title": "Producción",
+      "description": "Realizo la grabación en campo y la fotografía, capturando material pensado para formatos horizontales y verticales."
+    },
+    {
+      "title": "Edición",
+      "description": "Transformo el material en una historia dinámica mediante edición, ritmo, música, subtítulos y diseño sonoro."
+    },
+    {
+      "title": "Color",
+      "description": "Aplico corrección y colorización para mantener una identidad visual consistente en todos los contenidos."
+    },
+    {
+      "title": "Optimización",
+      "description": "Diseño miniaturas, títulos, descripciones y adapto cada pieza al algoritmo de cada plataforma."
+    },
+    {
+      "title": "Publicación",
+      "description": "Publico el contenido en YouTube, Facebook, Instagram y TikTok siguiendo una estrategia de distribución."
+    },
+    {
+      "title": "Análisis",
+      "description": "Evalúo métricas como visualizaciones, retención, tiempo de reproducción y crecimiento de la comunidad."
+    },
+    {
+      "title": "Mejora continua",
+      "description": "Utilizo los resultados obtenidos para optimizar las siguientes publicaciones y potenciar el crecimiento orgánico."
+    }
+  ]
+}

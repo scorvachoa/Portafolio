@@ -1,0 +1,28 @@
+{
+  "label": "Testimonios",
+  "title": "Lo que dicen quienes trabajaron conmigo",
+  "description": "Estructura lista para mostrar referencias de clientes y colaboradores.",
+  "testimonials": [
+    {
+      "quote": "Trabajar con Smith transformó por completo nuestra presencia digital. Cada video superaba las expectativas y los resultados se notaron desde el primer mes.",
+      "name": "Nombre del Cliente",
+      "role": "Gerente de Marketing — Empresa",
+      "rating": 5,
+      "avatar": "/assets/avatar-1.svg"
+    },
+    {
+      "quote": "Entiende el contenido como estrategia, no solo como producción. Analiza, propone y ejecuta. Es exactamente lo que cualquier marca necesita.",
+      "name": "Nombre del Cliente",
+      "role": "CEO — Agencia",
+      "rating": 5,
+      "avatar": "/assets/avatar-2.svg"
+    },
+    {
+      "quote": "Profesional, puntual y creativo. La calidad de la edición y el criterio de dirección elevaron el nivel de todo nuestro contenido.",
+      "name": "Nombre del Cliente",
+      "role": "Director de Contenido — Canal",
+      "rating": 5,
+      "avatar": "/assets/avatar-3.svg"
+    }
+  ]
+}

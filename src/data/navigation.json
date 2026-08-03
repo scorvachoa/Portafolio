@@ -1,0 +1,16 @@
+{
+  "label": "Navegación",
+  "links": [
+    { "label": "Inicio", "href": "#inicio" },
+    { "label": "Sobre mí", "href": "#sobre-mi" },
+    { "label": "Servicios", "href": "#servicios" },
+    { "label": "Proceso", "href": "#proceso" },
+    { "label": "Proyectos", "href": "#proyectos" },
+    { "label": "Videos", "href": "#videos" },
+    { "label": "Contacto", "href": "#contacto" }
+  ],
+  "cta": {
+    "label": "Descargar CV",
+    "href": "/assets/cv.pdf"
+  }
+}

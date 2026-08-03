@@ -1,0 +1,86 @@
+---
+/**
+ * Experiencia: timeline vertical.
+ */
+import experience from '@/data/experience.json';
+import SectionHeading from '@/components/SectionHeading.astro';
+import Reveal from '@/components/Reveal.astro';
+import Icon from '@/components/Icon.astro';
+---
+
+<section class="relative py-24 sm:py-32" aria-label="Experiencia">
+  <div class="container-page grid gap-16 lg:grid-cols-12">
+    <div class="lg:col-span-4">
+      <SectionHeading
+        eyebrow={experience.label}
+        title={experience.title}
+        description={experience.description}
+      />
+    </div>
+
+    <div class="relative lg:col-span-8">
+      {/* Línea del timeline */}
+      <div class="absolute bottom-4 left-[7px] top-2 w-px bg-gradient-to-b from-brand/60 via-white/10 to-transparent" aria-hidden="true" />
+
+      <div class="space-y-12">
+        {
+          experience.experience.map((job, index) => (
+            <Reveal delay={index * 0.1} class="relative pl-10">
+              <span
+                class="absolute left-0 top-1.5 grid size-[15px] place-items-center rounded-full border-2 border-brand bg-ink"
+                aria-hidden="true"
+              >
+                <span class="size-1.5 rounded-full bg-brand" />
+              </span>
+
+              <div class="card p-7 sm:p-8">
+                <div class="flex flex-wrap items-center justify-between gap-4">
+                  <div>
+                    <span class="chip">{job.period}</span>
+                    <h3 class="mt-4 font-display text-2xl font-semibold text-white">{job.company}</h3>
+                    <p class="mt-1 font-display text-sm font-medium text-brand">{job.role}</p>
+                  </div>
+                  <div class="flex flex-col items-end gap-2 text-xs text-white/40">
+                    <span class="flex items-center gap-2">
+                      <Icon name="map-pin" size={13} class="text-brand/60" />
+                      {job.location}
+                    </span>
+                    <span class="flex items-center gap-2">
+                      <Icon name="briefcase" size={13} class="text-brand/60" />
+                      {job.type}
+                    </span>
+                  </div>
+                </div>
+
+                <p class="mt-5 text-sm leading-relaxed text-white/55">{job.description}</p>
+
+                <ul class="mt-6 space-y-2.5">
+                  {
+                    job.highlights.map((highlight) => (
+                      <li class="flex items-start gap-3 text-sm text-white/60">
+                        <span class="mt-1 grid size-4 shrink-0 place-items-center rounded-full bg-brand/15 text-brand">
+                          <Icon name="check" size={11} strokeWidth={3} />
+                        </span>
+                        {highlight}
+                      </li>
+                    ))
+                  }
+                </ul>
+
+                <div class="mt-6 flex flex-wrap gap-2 border-t border-white/8 pt-6">
+                  {
+                    job.tools.map((tool) => (
+                      <span class="rounded-full border border-white/8 bg-white/4 px-3 py-1 text-[11px] text-white/50">
+                        {tool}
+                      </span>
+                    ))
+                  }
+                </div>
+              </div>
+            </Reveal>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

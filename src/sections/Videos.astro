@@ -1,0 +1,88 @@
+---
+/**
+ * Videos: grid responsive con modal de reproducción.
+ */
+import videos from '@/data/videos.json';
+import { asset } from '@/utils/asset';
+import SectionHeading from '@/components/SectionHeading.astro';
+import Reveal from '@/components/Reveal.astro';
+import Icon from '@/components/Icon.astro';
+
+const platforms: Record<string, string> = {
+  youtube: 'YouTube',
+  tiktok: 'TikTok',
+  instagram: 'Instagram',
+};
+---
+
+<section id="videos" class="relative py-24 sm:py-32" aria-label="Videos">
+  <div class="container-page">
+    <SectionHeading
+      eyebrow={videos.label}
+      title={videos.title}
+      description={videos.description}
+    />
+
+    <div class="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
+      {
+        videos.videos.map((video, index) => (
+          <Reveal delay={(index % 3) * 0.08} class="h-full">
+            <button
+              type="button"
+              data-video-open
+              data-video-id={video.id}
+              class="group block h-full w-full text-left"
+              data-cursor="hover"
+              aria-label={`Reproducir ${video.title}`}
+            >
+              <div class="relative overflow-hidden rounded-2xl border border-white/8 bg-surface-2">
+                <div class="overflow-hidden">
+                  <img
+                    src={asset(video.thumbnail)}
+                    alt={`Miniatura de ${video.title}`}
+                    width="1600"
+                    height="900"
+                    loading="lazy"
+                    class="aspect-video w-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-110"
+                  />
+                </div>
+
+                {/* Overlay + botón play */}
+                <div class="absolute inset-0 grid place-items-center bg-ink/40 opacity-80 transition-opacity duration-500 group-hover:opacity-100">
+                  <span class="grid size-16 scale-90 place-items-center rounded-full border border-white/25 bg-white/10 text-white backdrop-blur-sm transition-all duration-500 group-hover:scale-100 group-hover:border-brand group-hover:bg-brand">
+                    <Icon name="play" size={24} />
+                  </span>
+                </div>
+
+                {/* Duración + vistas */}
+                <div class="absolute right-3 top-3 flex items-center gap-2">
+                  <span class="rounded-full bg-ink/70 px-3 py-1 text-[11px] font-medium text-white backdrop-blur-sm">
+                    {video.duration}
+                  </span>
+                </div>
+
+                <div class="absolute bottom-3 left-3 flex items-center gap-2 rounded-full bg-ink/70 px-3 py-1 text-[11px] font-medium text-white/85 backdrop-blur-sm">
+                  <Icon name="eye" size={13} class="text-brand" />
+                  {video.views} vistas
+                </div>
+
+                <span class="absolute bottom-3 right-3 rounded-full bg-brand/85 px-3 py-1 text-[11px] font-semibold text-white">
+                  {platforms[video.platform] ?? video.platform}
+                </span>
+              </div>
+
+              <div class="mt-4">
+                <p class="text-[11px] font-medium uppercase tracking-[0.2em] text-brand/70">
+                  {video.category}
+                </p>
+                <h3 class="mt-1.5 font-display text-lg font-semibold text-white transition-colors duration-300 group-hover:text-brand">
+                  {video.title}
+                </h3>
+              </div>
+            </button>
+          </Reveal>
+        ))
+      }
+    </div>
+  </div>
+</section>

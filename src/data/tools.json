@@ -1,0 +1,23 @@
+{
+  "label": "Herramientas",
+  "title": "Mi arsenal creativo",
+  "description": "Las herramientas que uso a diario para producir, editar y publicar contenido de alto nivel.",
+  "tools": [
+    { "name": "DaVinci Resolve", "category": "Edición & Color", "monogram": "DR" },
+    { "name": "CapCut", "category": "Edición vertical", "monogram": "CC" },
+    { "name": "Premiere Pro", "category": "Edición", "monogram": "Pr" },
+    { "name": "After Effects", "category": "Motion Graphics", "monogram": "Ae" },
+    { "name": "Photoshop", "category": "Retoque", "monogram": "Ps" },
+    { "name": "Illustrator", "category": "Diseño vectorial", "monogram": "Ai" },
+    { "name": "Lightroom", "category": "Fotografía", "monogram": "Lr" },
+    { "name": "Canva", "category": "Diseño rápido", "monogram": "Cv" },
+    { "name": "WordPress", "category": "Web", "monogram": "W" },
+    { "name": "HTML", "category": "Maquetación", "monogram": "<>" },
+    { "name": "CSS", "category": "Estilos", "monogram": "#" },
+    { "name": "JavaScript", "category": "Interactividad", "monogram": "JS" },
+    { "name": "Python", "category": "Automatización", "monogram": "Py" },
+    { "name": "YouTube Studio", "category": "Análisis", "monogram": "YT" },
+    { "name": "TikTok Studio", "category": "Análisis", "monogram": "TT" },
+    { "name": "Meta Business", "category": "Gestión", "monogram": "MB" }
+  ]
+}

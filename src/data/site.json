@@ -1,0 +1,34 @@
+{
+  "name": "SMITH CORVACHO",
+  "fullName": "Smith Corvacho Alvarez",
+  "roles": [
+    "Content Creator",
+    "Productor Audiovisual",
+    "Editor de Video"
+  ],
+  "tagline": "Creo contenido audiovisual que transforma destinos, marcas e historias en resultados medibles.",
+  "location": "Cusco, Perú",
+  "availability": "Disponible para nuevas oportunidades",
+  "email": "scorvachoa@gmail.com",
+  "phone": "+51 935 153 926",
+  "whatsapp": "935153926",
+  "cvUrl": "/assets/cv.pdf",
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/TU-USUARIO",
+    "youtube": "https://www.youtube.com/@TU-USUARIO",
+    "instagram": "https://www.instagram.com/TU-USUARIO",
+    "facebook": "https://www.facebook.com/TU-USUARIO",
+    "tiktok": "https://www.tiktok.com/@TU-USUARIO"
+  },
+  "hero": {
+    "video": "/assets/hero.mp4",
+    "poster": "/assets/hero-poster.svg",
+    "eyebrow": "Portafolio Profesional • Content Creator • Cusco, Perú"
+  },
+  "seo": {
+    "title": "Smith Corvacho | Content Creator & Productor Audiovisual",
+    "description": "Portafolio profesional de Smith Corvacho. Content Creator especializado en YouTube, TikTok, Instagram y Facebook. Más de 500 videos producidos, 1.6 millones de visualizaciones en YouTube y crecimiento orgánico para marcas del sector turístico.",
+    "ogImage": "/assets/og-image.webp",
+    "keywords": "Smith Corvacho, Content Creator Perú, Productor Audiovisual, Editor de Video, YouTube, TikTok, Instagram, Facebook, Storytelling, DaVinci Resolve, CapCut, Turismo, Machu Picchu, Cusco"
+  }
+}

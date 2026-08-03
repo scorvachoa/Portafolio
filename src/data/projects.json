@@ -1,0 +1,143 @@
+{
+  "label": "Casos de éxito",
+  "title": "Proyectos que generaron resultados reales",
+  "description": "Cada proyecto combina estrategia, producción audiovisual y análisis de métricas para alcanzar objetivos de crecimiento orgánico.",
+  "projects": [
+    {
+      "id": "machupicchu-terra-youtube",
+      "client": "Machupicchu Terra",
+      "category": "YouTube",
+      "title": "Crecimiento orgánico del canal principal de YouTube",
+      "hero": "/assets/project-1.svg",
+      "year": "2026",
+      "summary": "Producción integral de contenido para el canal principal de YouTube, gestionando cada etapa del proceso desde la planificación hasta el análisis de resultados.",
+      "objective": "Incrementar el alcance, las horas de reproducción y la comunidad del canal mediante contenido de alta calidad.",
+      "problem": "El canal necesitaba una estrategia constante de producción y optimización para aumentar su crecimiento orgánico.",
+      "solution": "Planifiqué, grabé, edité y publiqué contenido optimizado para YouTube, analizando métricas para mejorar el rendimiento de cada publicación.",
+      "myRole": "Planificación, guion, grabación, fotografía, edición, miniaturas, publicación y análisis de métricas.",
+      "tools": [
+        "DaVinci Resolve",
+        "CapCut",
+        "Adobe Premiere Pro",
+        "Adobe Photoshop",
+        "YouTube Studio"
+      ],
+      "results": [
+        {
+          "value": 1.6,
+          "suffix": "M",
+          "label": "Visualizaciones"
+        },
+        {
+          "value": 44,
+          "suffix": "K",
+          "label": "Horas de reproducción"
+        },
+        {
+          "value": 9,
+          "suffix": "K",
+          "label": "Suscriptores"
+        }
+      ],
+      "gallery": [
+        "/assets/gallery-1.svg",
+        "/assets/gallery-2.svg",
+        "/assets/gallery-3.svg"
+      ],
+      "video": {
+        "id": "REEMPLAZAR_ID",
+        "label": "Ver proyecto"
+      }
+    },
+    {
+      "id": "machupicchu-terra-social-media",
+      "client": "Machupicchu Terra",
+      "category": "Facebook & Instagram",
+      "title": "Estrategia de crecimiento para redes sociales",
+      "hero": "/assets/project-2.svg",
+      "year": "2026",
+      "summary": "Producción de contenido adaptado para Facebook e Instagram con enfoque en crecimiento orgánico y posicionamiento de marca.",
+      "objective": "Incrementar la comunidad y el alcance mediante contenido optimizado para redes sociales.",
+      "problem": "Era necesario fortalecer la presencia digital y generar una comunidad activa en ambas plataformas.",
+      "solution": "Desarrollé una estrategia de contenido consistente, produciendo videos, fotografías y publicaciones optimizadas para cada red social.",
+      "myRole": "Producción audiovisual, fotografía, edición, publicación y análisis de resultados.",
+      "tools": [
+        "DaVinci Resolve",
+        "CapCut",
+        "Adobe Photoshop",
+        "Meta Business Suite"
+      ],
+      "results": [
+        {
+          "value": 18,
+          "suffix": "K",
+          "label": "Seguidores Facebook"
+        },
+        {
+          "value": 2,
+          "suffix": "K",
+          "label": "Seguidores Instagram"
+        },
+        {
+          "value": 5,
+          "suffix": "Meses",
+          "label": "Tiempo de crecimiento"
+        }
+      ],
+      "gallery": [
+        "/assets/gallery-2.svg",
+        "/assets/gallery-4.svg",
+        "/assets/gallery-5.svg"
+      ],
+      "video": {
+        "id": "REEMPLAZAR_ID",
+        "label": "Ver proyecto"
+      }
+    },
+    {
+      "id": "contenido-vertical",
+      "client": "Machupicchu Terra",
+      "category": "YouTube Shorts & TikTok",
+      "title": "Producción de contenido vertical para millones de visualizaciones",
+      "hero": "/assets/project-3.svg",
+      "year": "2026",
+      "summary": "Creación de contenido vertical orientado a maximizar el alcance orgánico mediante Shorts, Reels y TikTok.",
+      "objective": "Incrementar la visibilidad de la marca utilizando formatos de video de alta retención.",
+      "problem": "Era necesario producir contenido frecuente y optimizado para el algoritmo de plataformas verticales.",
+      "solution": "Produje una gran cantidad de videos verticales aplicando estrategias de edición dinámica, storytelling y optimización para cada plataforma.",
+      "myRole": "Conceptualización, grabación, edición, publicación y optimización de contenido vertical.",
+      "tools": [
+        "CapCut",
+        "DaVinci Resolve",
+        "Adobe Premiere Pro",
+        "TikTok Studio"
+      ],
+      "results": [
+        {
+          "value": 500,
+          "suffix": "+",
+          "label": "YouTube Shorts"
+        },
+        {
+          "value": 1.8,
+          "suffix": "M",
+          "label": "Visualizaciones TikTok"
+        },
+        {
+          "value": 7,
+          "suffix": "",
+          "label": "Canales gestionados"
+        }
+      ],
+      "gallery": [
+        "/assets/gallery-3.svg",
+        "/assets/gallery-5.svg",
+        "/assets/gallery-6.svg"
+      ],
+      "video": {
+        "id": "REEMPLAZAR_ID",
+        "label": "Ver proyecto"
+      }
+    }
+  ]
+}

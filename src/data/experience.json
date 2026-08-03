@@ -1,0 +1,54 @@
+{
+  "label": "Experiencia",
+  "title": "Trayectoria profesional",
+  "description": "Experiencia liderando la producción audiovisual, la creación de contenido y el crecimiento orgánico de canales digitales para empresas del sector turístico.",
+  "experience": [
+    {
+      "company": "Machupicchu Terra",
+      "role": "Creador de Contenido | Productor Audiovisual",
+      "period": "Febrero 2024 — Actualidad",
+      "location": "Cusco, Perú",
+      "type": "Presencial",
+      "description": "Responsable único de la producción de contenido para YouTube, Facebook, Instagram y TikTok, gestionando todo el proceso desde la planificación y grabación hasta la edición, publicación y análisis de resultados.",
+      "highlights": [
+        "Gestioné de forma integral más de 7 canales de YouTube",
+        "Produje más de 500 YouTube Shorts para múltiples canales",
+        "Alcancé más de 1.6 millones de visualizaciones y 44,000 horas de reproducción",
+        "Incrementé el canal principal de 3,000 a 9,000 suscriptores",
+        "Impulsé el crecimiento de Facebook de 1,000 a 18,000 seguidores en 5 meses",
+        "Generé más de 1.8 millones de visualizaciones en TikTok"
+      ],
+      "tools": [
+        "DaVinci Resolve",
+        "CapCut",
+        "Adobe Premiere Pro",
+        "Adobe After Effects",
+        "Adobe Photoshop",
+        "Adobe Lightroom"
+      ]
+    },
+    {
+      "company": "Bioandean Expeditions",
+      "role": "Webmaster & Diseñador Gráfico",
+      "period": "Agosto 2022 — Enero 2024",
+      "location": "Cusco, Perú",
+      "type": "Presencial",
+      "description": "Encargado del mantenimiento del sitio web, desarrollo de contenido, diseño gráfico y optimización de recursos digitales para fortalecer la presencia online de la empresa.",
+      "highlights": [
+        "Supervisé y administré el contenido del sitio web corporativo",
+        "Diseñé y desarrollé el blog oficial de la empresa",
+        "Implementé un nuevo formulario de reservas para campañas de Google Ads",
+        "Rediseñé los mapas de todos los tours comercializados",
+        "Creé plantillas de Invoice y Brochure para optimizar el proceso de ventas"
+      ],
+      "tools": [
+        "WordPress",
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    }
+  ]
+}

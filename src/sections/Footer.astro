@@ -1,0 +1,51 @@
+---
+/**
+ * Footer: marca, redes sociales y navegación.
+ */
+import site from '@/data/site.json';
+import Icon from '@/components/Icon.astro';
+
+const socials = [
+  { icon: 'youtube', href: site.social.youtube, label: 'YouTube' },
+  { icon: 'instagram', href: site.social.instagram, label: 'Instagram' },
+  { icon: 'facebook', href: site.social.facebook, label: 'Facebook' },
+  { icon: 'tiktok', href: site.social.tiktok, label: 'TikTok' },
+  { icon: 'linkedin', href: site.social.linkedin, label: 'LinkedIn' },
+];
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-white/8 py-12" aria-label="Pie de página">
+  <div class="container-page flex flex-col items-center justify-between gap-8 sm:flex-row">
+    <div class="flex items-center gap-3">
+      <span class="grid size-9 place-items-center rounded-lg bg-brand/15 font-display text-sm font-bold text-brand">
+        SC
+      </span>
+      <div>
+        <p class="font-display text-sm font-semibold text-white">{site.fullName}</p>
+        <p class="text-xs text-white/40">{site.roles.join(' · ')}</p>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-2">
+      {
+        socials.map((social) => (
+          <a
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={social.label}
+            class="grid size-10 place-items-center rounded-full border border-white/10 text-white/55 transition-all duration-300 hover:border-brand hover:bg-brand hover:text-white"
+            data-cursor="hover"
+          >
+            <Icon name={social.icon} size={17} />
+          </a>
+        ))
+      }
+    </div>
+
+    <p class="text-xs text-white/35">
+      © {year} {site.name}. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>

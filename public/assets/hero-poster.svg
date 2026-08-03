@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="SMITH CORVACHO">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="55%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1a1a1f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.22" r="0.9">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.45"/>
+      <stop offset="55%" stop-color="#0ea5e9" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.15" cy="0.9" r="0.7">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0v80" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+  <rect width="1920" height="1080" fill="url(#glow2)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <circle cx="1574.3999999999999" cy="194.4" r="172.79999999999998" fill="none" stroke="#0ea5e9" stroke-opacity="0.4" stroke-width="2"/>
+  <circle cx="1574.3999999999999" cy="194.4" r="307.2" fill="none" stroke="#0ea5e9" stroke-opacity="0.18" stroke-width="1.5"/>
+  <text x="60" y="1034" font-family="Arial, sans-serif" font-size="22" letter-spacing="8" fill="#ffffff" fill-opacity="0.35">SMITH CORVACHO</text>
+  <text x="60" y="496.8" font-family="Arial, sans-serif" font-weight="bold" font-size="137" fill="#ffffff">SMITH CORVACHO</text>
+  <text x="62" y="647.8" font-family="Arial, sans-serif" font-size="60" fill="#ffffff" fill-opacity="0.5">Content Creator &amp; Productor Audiovisual</text>
+</svg>

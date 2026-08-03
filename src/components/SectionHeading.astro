@@ -1,0 +1,34 @@
+---
+/**
+ * Encabezado de sección reutilizable: eyebrow, título y descripción.
+ * Se anima con el sistema de reveal global (data-reveal).
+ */
+interface Props {
+  eyebrow: string;
+  title: string;
+  description?: string;
+  align?: 'left' | 'center';
+  id?: string;
+}
+
+const { eyebrow, title, description, align = 'left', id } = Astro.props;
+const isCenter = align === 'center';
+---
+
+<div
+  id={id}
+  class:list={['flex flex-col gap-5', isCenter ? 'items-center text-center' : 'items-start']}
+>
+  <span data-reveal class="chip chip-brand">
+    <span class="size-1.5 rounded-full bg-brand animate-pulse-dot" aria-hidden="true" />
+    {eyebrow}
+  </span>
+  <h2 data-reveal data-delay="0.05" class="section-title max-w-[16ch]">
+    {title}
+  </h2>
+  {description && (
+    <p data-reveal data-delay="0.1" class="max-w-xl text-base leading-relaxed text-white/55 sm:text-lg">
+      {description}
+    </p>
+  )}
+</div>

@@ -1,0 +1,97 @@
+{
+  "label": "Servicios",
+  "title": "Servicios que impulsan marcas mediante contenido estratégico",
+  "description": "Desde la planificación hasta el análisis de resultados, desarrollo contenido audiovisual pensado para conectar con la audiencia y generar crecimiento orgánico.",
+  "services": [
+    {
+      "title": "Producción Audiovisual",
+      "icon": "clapperboard",
+      "description": "Planificación, grabación y producción de contenido audiovisual para YouTube y redes sociales, cuidando cada detalle del proceso.",
+      "tags": [
+        "Preproducción",
+        "Grabación",
+        "Producción"
+      ]
+    },
+    {
+      "title": "Fotografía",
+      "icon": "camera",
+      "description": "Fotografía de destinos turísticos, experiencias y contenido para fortalecer la identidad visual de cada marca.",
+      "tags": [
+        "Turismo",
+        "Experiencias",
+        "Marca"
+      ]
+    },
+    {
+      "title": "Edición de Video",
+      "icon": "scissors",
+      "description": "Edición profesional enfocada en storytelling, ritmo, retención y adaptación para múltiples plataformas.",
+      "tags": [
+        "Storytelling",
+        "Retención",
+        "Color"
+      ]
+    },
+    {
+      "title": "YouTube",
+      "icon": "youtube",
+      "description": "Producción y optimización de contenido de largo formato para aumentar visualizaciones, horas de reproducción y suscriptores.",
+      "tags": [
+        "SEO",
+        "CTR",
+        "YouTube Studio"
+      ]
+    },
+    {
+      "title": "Contenido Vertical",
+      "icon": "zap",
+      "description": "Creación de Shorts, Reels y TikTok diseñados para captar la atención desde los primeros segundos y maximizar el alcance.",
+      "tags": [
+        "Shorts",
+        "Reels",
+        "TikTok"
+      ]
+    },
+    {
+      "title": "Instagram & Facebook",
+      "icon": "instagram",
+      "description": "Producción de contenido adaptado a cada plataforma para fortalecer la presencia digital y fomentar el crecimiento orgánico.",
+      "tags": [
+        "Reels",
+        "Feed",
+        "Stories"
+      ]
+    },
+    {
+      "title": "Storytelling",
+      "icon": "pen-tool",
+      "description": "Desarrollo de ideas y narrativas que convierten destinos, experiencias y marcas en historias memorables.",
+      "tags": [
+        "Concepto",
+        "Narrativa",
+        "Guion"
+      ]
+    },
+    {
+      "title": "Optimización de Contenido",
+      "icon": "trending-up",
+      "description": "Optimización de títulos, miniaturas, publicaciones y análisis de métricas para mejorar el rendimiento del contenido.",
+      "tags": [
+        "SEO",
+        "Miniaturas",
+        "Analytics"
+      ]
+    },
+    {
+      "title": "Gestión de Canales",
+      "icon": "layers",
+      "description": "Administración integral de canales de YouTube y redes sociales, desde la planificación del contenido hasta el seguimiento de resultados.",
+      "tags": [
+        "Estrategia",
+        "Publicación",
+        "Crecimiento"
+      ]
+    }
+  ]
+}

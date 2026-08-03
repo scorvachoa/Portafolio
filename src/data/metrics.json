@@ -1,0 +1,65 @@
+{
+  "label": "Resultados",
+  "title": "El crecimiento se demuestra con datos",
+  "description": "Métricas reales obtenidas mediante estrategias de contenido, producción audiovisual y crecimiento orgánico para marcas del sector turístico.",
+  "metrics": [
+    {
+      "value": 500,
+      "suffix": "+",
+      "label": "Videos producidos",
+      "icon": "clapperboard",
+      "note": "YouTube Shorts, Reels y videos de formato largo"
+    },
+    {
+      "value": 1.6,
+      "suffix": "M",
+      "decimals": 1,
+      "label": "Visualizaciones YouTube",
+      "icon": "eye",
+      "note": "Acumuladas en el canal principal durante mi gestión"
+    },
+    {
+      "value": 44,
+      "suffix": "K",
+      "label": "Horas de reproducción",
+      "icon": "clock",
+      "note": "Tiempo de visualización generado en YouTube"
+    },
+    {
+      "value": 9,
+      "suffix": "K",
+      "label": "Suscriptores",
+      "icon": "users",
+      "note": "Crecimiento del canal principal de 3K a 9K"
+    },
+    {
+      "value": 18,
+      "suffix": "K",
+      "label": "Seguidores Facebook",
+      "icon": "facebook",
+      "note": "Crecimiento de 1K a 18K en solo 5 meses"
+    },
+    {
+      "value": 1.8,
+      "suffix": "M",
+      "decimals": 1,
+      "label": "Visualizaciones TikTok",
+      "icon": "trending-up",
+      "note": "Alcance orgánico acumulado"
+    },
+    {
+      "value": 7,
+      "suffix": "",
+      "label": "Canales gestionados",
+      "icon": "layers",
+      "note": "Producción integral para múltiples canales de YouTube"
+    },
+    {
+      "value": 4,
+      "suffix": "",
+      "label": "Plataformas",
+      "icon": "camera",
+      "note": "YouTube, Facebook, Instagram y TikTok"
+    }
+  ]
+}

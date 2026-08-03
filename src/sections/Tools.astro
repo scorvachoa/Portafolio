@@ -1,0 +1,41 @@
+---
+/**
+ * Herramientas: grid de monogramas estilizados.
+ * Reemplaza el monograma por un logo real (SVG) cuando esté disponible.
+ */
+import tools from '@/data/tools.json';
+import SectionHeading from '@/components/SectionHeading.astro';
+import Reveal from '@/components/Reveal.astro';
+---
+
+<section class="relative py-24 sm:py-32" aria-label="Herramientas">
+  <div class="container-page">
+    <SectionHeading
+      eyebrow={tools.label}
+      title={tools.title}
+      description={tools.description}
+    />
+
+    <div class="mt-16 grid grid-cols-3 gap-3 sm:grid-cols-4 lg:grid-cols-8 lg:gap-4">
+      {
+        tools.tools.map((tool, index) => (
+          <Reveal delay={(index % 8) * 0.05}>
+            <div
+              class="group flex flex-col items-center gap-3 rounded-2xl border border-white/8 bg-surface-2/60 px-3 py-6 text-center transition-all duration-500 hover:-translate-y-1 hover:border-brand/40"
+              data-cursor="hover"
+            >
+              <span
+                class="grid size-14 place-items-center rounded-xl border border-white/10 bg-white/4 font-display text-lg font-bold text-white/80 transition-all duration-500 group-hover:border-brand group-hover:bg-brand group-hover:text-white"
+                aria-hidden="true"
+              >
+                {tool.monogram}
+              </span>
+              <span class="font-display text-xs font-medium text-white/80">{tool.name}</span>
+              <span class="text-[10px] uppercase tracking-wider text-white/35">{tool.category}</span>
+            </div>
+          </Reveal>
+        ))
+      }
+    </div>
+  </div>
+</section>

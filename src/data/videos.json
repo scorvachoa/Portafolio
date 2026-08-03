@@ -1,0 +1,61 @@
+{
+  "label": "Videos destacados",
+  "title": "Selección de mi mejor trabajo",
+  "description": "Piezas seleccionadas que muestran versatilidad, narrativa y calidad técnica.",
+  "videos": [
+    {
+      "id": "dQw4w9WgXcQ",
+      "title": "Nombre del Video 1",
+      "category": "Campaña",
+      "duration": "02:30",
+      "thumbnail": "/assets/video-1.svg",
+      "views": "120K",
+      "platform": "youtube"
+    },
+    {
+      "id": "dQw4w9WgXcQ",
+      "title": "Nombre del Video 2",
+      "category": "Documental",
+      "duration": "08:45",
+      "thumbnail": "/assets/video-2.svg",
+      "views": "45K",
+      "platform": "youtube"
+    },
+    {
+      "id": "dQw4w9WgXcQ",
+      "title": "Nombre del Video 3",
+      "category": "Reel",
+      "duration": "00:45",
+      "thumbnail": "/assets/video-3.svg",
+      "views": "800K",
+      "platform": "tiktok"
+    },
+    {
+      "id": "dQw4w9WgXcQ",
+      "title": "Nombre del Video 4",
+      "category": "Spot",
+      "duration": "01:15",
+      "thumbnail": "/assets/video-4.svg",
+      "views": "65K",
+      "platform": "youtube"
+    },
+    {
+      "id": "dQw4w9WgXcQ",
+      "title": "Nombre del Video 5",
+      "category": "YouTube",
+      "duration": "12:10",
+      "thumbnail": "/assets/video-5.svg",
+      "views": "200K",
+      "platform": "youtube"
+    },
+    {
+      "id": "dQw4w9WgXcQ",
+      "title": "Nombre del Video 6",
+      "category": "Branding",
+      "duration": "03:20",
+      "thumbnail": "/assets/video-6.svg",
+      "views": "30K",
+      "platform": "youtube"
+    }
+  ]
+}

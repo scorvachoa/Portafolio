@@ -1,0 +1,21 @@
+---
+/**
+ * Loader de entrada con contador y barra de progreso.
+ */
+---
+
+<div
+  id="loader"
+  class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-ink"
+  aria-hidden="true"
+>
+  <span class="font-display text-5xl font-semibold tracking-[0.25em] text-white sm:text-6xl">
+    SMITH
+  </span>
+  <div class="mt-10 h-px w-48 overflow-hidden rounded-full bg-white/10 sm:w-64">
+    <div id="loader-bar" class="h-full w-full origin-left scale-x-0 bg-brand" />
+  </div>
+  <div class="mt-6 font-display text-xs tracking-[0.4em] text-white/40">
+    CARGANDO PORTFOLIO <span id="loader-counter" class="text-brand">000</span>
+  </div>
+</div>

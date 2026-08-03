@@ -1,0 +1,37 @@
+---
+/**
+ * Página principal del portafolio.
+ * Cada sección es un componente independiente (fácil de escalar y mantener).
+ */
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+import Hero from '@/sections/Hero.astro';
+import Metrics from '@/sections/Metrics.astro';
+import About from '@/sections/About.astro';
+import Services from '@/sections/Services.astro';
+import Process from '@/sections/Process.astro';
+import CaseStudies from '@/sections/CaseStudies.astro';
+import Videos from '@/sections/Videos.astro';
+import Gallery from '@/sections/Gallery.astro';
+import Tools from '@/sections/Tools.astro';
+import Experience from '@/sections/Experience.astro';
+import Testimonials from '@/sections/Testimonials.astro';
+import Contact from '@/sections/Contact.astro';
+import Footer from '@/sections/Footer.astro';
+---
+
+<BaseLayout>
+  <Hero />
+  <Metrics />
+  <About />
+  <Services />
+  <Process />
+  <CaseStudies />
+  <Videos />
+  <Gallery />
+  <Tools />
+  <Experience />
+  <Testimonials />
+  <Contact />
+  <Footer />
+</BaseLayout>

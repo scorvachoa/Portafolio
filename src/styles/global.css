@@ -1,0 +1,297 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta de marca */
+  --color-ink: #09090b;
+  --color-surface: #111827;
+  --color-surface-2: #18181b;
+  --color-surface-3: #1f2937;
+  --color-brand: #0ea5e9;
+  --color-brand-soft: #38bdf8;
+  --color-brand-dim: #0369a1;
+
+  /* Tipografía */
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+
+  /* Efectos */
+  --shadow-glow: 0 0 0 1px rgb(14 165 233 / 0.25), 0 20px 60px -15px rgb(14 165 233 / 0.35);
+  --shadow-card: 0 10px 40px -12px rgb(0 0 0 / 0.6);
+
+  /* Animaciones */
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-pulse-dot: pulse-dot 2s ease-in-out infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes pulse-dot {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.4;
+      transform: scale(0.8);
+    }
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  body {
+    @apply bg-ink text-white font-sans antialiased;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background-color: rgb(14 165 233 / 0.9);
+    color: #fff;
+  }
+
+  /* Scrollbar sutil */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #09090b;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #27272a;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0ea5e9;
+  }
+
+  :focus-visible {
+    outline: 2px solid #0ea5e9;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Glassmorphism muy sutil */
+  .glass {
+    background: rgb(24 24 27 / 0.55);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid rgb(255 255 255 / 0.08);
+  }
+
+  .text-gradient {
+    background: linear-gradient(120deg, #ffffff 0%, #a1a1aa 45%, #0ea5e9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 1px rgb(255 255 255 / 0.22);
+    color: transparent;
+  }
+
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Estado final para reveal (reduced motion o sin JS) */
+  .is-visible {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+@layer components {
+  /* Contenedor de sección */
+  .container-page {
+    @apply mx-auto w-full max-w-[1200px] px-5 sm:px-8 lg:px-10;
+  }
+
+  /* Botones */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2.5 rounded-full font-display font-medium tracking-tight transition-all duration-300 select-none bg-brand text-white px-7 py-3.5 text-sm;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-ink;
+    box-shadow: 0 0 0 0 rgb(14 165 233 / 0.4);
+  }
+  .btn-primary:hover {
+    @apply bg-brand-soft;
+    box-shadow: 0 12px 40px -8px rgb(14 165 233 / 0.65);
+    transform: translateY(-2px);
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2.5 rounded-full font-display font-medium tracking-tight transition-all duration-300 select-none border border-white/15 bg-white/5 px-7 py-3.5 text-sm text-white/90 backdrop-blur-sm hover:border-brand hover:text-brand;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-ink;
+  }
+  .btn-ghost:hover {
+    transform: translateY(-2px);
+  }
+
+  .btn-sm {
+    @apply px-5 py-2.5 text-xs;
+  }
+
+  /* Chip / badge */
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-white/70 uppercase;
+  }
+  .chip-brand {
+    @apply border-brand/30 text-brand;
+  }
+
+  /* Títulos de sección */
+  .section-eyebrow {
+    @apply font-display text-xs font-semibold tracking-[0.3em] text-brand uppercase;
+  }
+
+  .section-title {
+    @apply font-display text-3xl leading-[1.05] font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl;
+  }
+
+  /* Tarjetas base */
+  .card {
+    @apply relative overflow-hidden rounded-2xl border border-white/8 bg-surface-2/60;
+    transition: border-color 0.4s ease, transform 0.4s ease, background-color 0.4s ease;
+  }
+  .card:hover {
+    @apply border-brand/30;
+  }
+
+  /* Línea divisoria */
+  .divider-glow {
+    background: linear-gradient(90deg, transparent, rgb(14 165 233 / 0.5), transparent);
+    height: 1px;
+  }
+
+  /* Estado de scroll de la navegación */
+  #site-nav.is-scrolled {
+    background: rgb(9 9 11 / 0.72);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border-bottom: 1px solid rgb(255 255 255 / 0.06);
+  }
+
+  /* Menú móvil */
+  #mobile-menu {
+    visibility: hidden;
+  }
+  #mobile-menu.is-open {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Botón volver arriba */
+  #back-to-top.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  #back-to-top {
+    transform: translateY(16px);
+  }
+
+  /* Paginación Swiper (tema oscuro) */
+  .swiper-pagination-bullet {
+    background: rgb(255 255 255 / 0.25);
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  .swiper-pagination-bullet-active {
+    background: #0ea5e9;
+    width: 24px;
+  }
+  #testimonials-pagination {
+    align-items: center;
+  }
+
+  /* Cursor personalizado */
+  .cursor-dot,
+  .cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 120;
+    border-radius: 9999px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease, width 0.25s ease, height 0.25s ease, background-color 0.25s ease;
+  }
+  .cursor-dot {
+    width: 6px;
+    height: 6px;
+    background: #0ea5e9;
+  }
+  .cursor-ring {
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgb(255 255 255 / 0.35);
+  }
+  .cursor-dot--grow {
+    width: 10px;
+    height: 10px;
+  }
+  .cursor-ring--grow {
+    width: 56px;
+    height: 56px;
+    border-color: rgb(14 165 233 / 0.8);
+    background: rgb(14 165 233 / 0.08);
+  }
+  .cursor-ring--pressed {
+    transform: scale(0.85);
+  }
+  html.has-cursor,
+  html.has-cursor a,
+  html.has-cursor button,
+  html.has-cursor [data-cursor] {
+    cursor: none;
+  }
+}

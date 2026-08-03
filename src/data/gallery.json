@@ -1,0 +1,13 @@
+{
+  "label": "Galería",
+  "title": "Detrás de cámara y fotografía",
+  "description": "Momentos reales del proceso creativo y capturas seleccionadas.",
+  "items": [
+    { "src": "/assets/gallery-1.svg", "thumb": "/assets/gallery-1.svg", "caption": "Detrás de cámara — Rodaje", "category": "BTS" },
+    { "src": "/assets/gallery-2.svg", "thumb": "/assets/gallery-2.svg", "caption": "Set de grabación", "category": "BTS" },
+    { "src": "/assets/gallery-3.svg", "thumb": "/assets/gallery-3.svg", "caption": "Fotografía de producto", "category": "Foto" },
+    { "src": "/assets/gallery-4.svg", "thumb": "/assets/gallery-4.svg", "caption": "Iluminación profesional", "category": "BTS" },
+    { "src": "/assets/gallery-5.svg", "thumb": "/assets/gallery-5.svg", "caption": "Retrato editorial", "category": "Foto" },
+    { "src": "/assets/gallery-6.svg", "thumb": "/assets/gallery-6.svg", "caption": "Locación exterior", "category": "BTS" }
+  ]
+}
