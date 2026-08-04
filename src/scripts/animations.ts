@@ -14,7 +14,7 @@ const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /** Hero: animación de entrada después de que el loader termina. */
 function initHeroReveal(): void {
-  const root = document.getElementById('hero');
+  const root = document.getElementById('inicio');
   if (!root) return;
 
   const lines = root.querySelectorAll<HTMLElement>('[data-hero-line]');

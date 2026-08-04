@@ -1,20 +1,20 @@
 ---
 /**
- * Modal de video (YouTube) usando <dialog> nativo.
+ * Modal de video (YouTube / TikTok / Facebook) usando <dialog> nativo.
  */
 ---
 
 <dialog
   id="video-modal"
-  class="m-auto w-[min(920px,92vw)] overflow-hidden rounded-2xl border border-white/10 bg-ink p-0 backdrop:bg-black/80"
+  class="m-auto overflow-hidden rounded-2xl border border-white/10 bg-ink p-0 backdrop:bg-black/80"
   aria-label="Reproductor de video"
 >
-  <div class="relative aspect-video w-full">
+  <div id="video-modal-ratio" class="relative aspect-video w-full">
     <iframe
       id="video-modal-frame"
       class="size-full"
       src=""
-      title="Video de YouTube"
+      title="Video embebido"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin"
@@ -33,3 +33,12 @@
     </button>
   </div>
 </dialog>
+
+<style>
+  #video-modal {
+    width: min(920px, 92vw);
+  }
+  #video-modal.is-vertical {
+    width: min(420px, 92vw);
+  }
+</style>

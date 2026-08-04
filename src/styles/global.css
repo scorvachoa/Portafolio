@@ -253,6 +253,26 @@
     align-items: center;
   }
 
+  /* Lightbox: imagen abre en tamaño contenido, sin ocupar pantalla completa */
+  .lg-outer .lg-img-wrap {
+    display: grid;
+    place-items: center;
+    padding: 0;
+  }
+  .lg-outer .lg-object {
+    max-width: min(90vw, 640px);
+    max-height: min(85vh, 520px);
+    border-radius: 12px;
+    box-shadow: 0 20px 60px -15px rgb(0 0 0 / 0.8);
+  }
+  .lg-outer .lg-thumb-outer {
+    bottom: 8px;
+  }
+  .lg-outer .lg-thumb-item {
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
   /* Cursor personalizado */
   .cursor-dot,
   .cursor-ring {

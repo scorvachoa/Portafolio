@@ -8,7 +8,7 @@
       "client": "Machupicchu Terra",
       "category": "YouTube",
       "title": "Crecimiento orgánico del canal principal de YouTube",
-      "hero": "/assets/project-1.svg",
+      "hero": "/assets/images/imachupicchu-yt.png",
       "year": "2026",
       "summary": "Producción integral de contenido para el canal principal de YouTube, gestionando cada etapa del proceso desde la planificación hasta el análisis de resultados.",
       "objective": "Incrementar el alcance, las horas de reproducción y la comunidad del canal mediante contenido de alta calidad.",
@@ -40,21 +40,22 @@
         }
       ],
       "gallery": [
-        "/assets/gallery-1.svg",
-        "/assets/gallery-2.svg",
-        "/assets/gallery-3.svg"
+        "/assets/images/imachupicchu-metrics.png",
+        "/assets/images/imachupicchu-videos.png",
+        "/assets/images/imachupicchu-shorts.png"
       ],
       "video": {
         "id": "REEMPLAZAR_ID",
         "label": "Ver proyecto"
-      }
+      },
+      "link": "https://www.youtube.com/@IMachupicchu"
     },
     {
       "id": "machupicchu-terra-social-media",
       "client": "Machupicchu Terra",
       "category": "Facebook & Instagram",
       "title": "Estrategia de crecimiento para redes sociales",
-      "hero": "/assets/project-2.svg",
+      "hero": "/assets/images/facebook-mt.png",
       "year": "2026",
       "summary": "Producción de contenido adaptado para Facebook e Instagram con enfoque en crecimiento orgánico y posicionamiento de marca.",
       "objective": "Incrementar la comunidad y el alcance mediante contenido optimizado para redes sociales.",
@@ -92,7 +93,8 @@
       "video": {
         "id": "REEMPLAZAR_ID",
         "label": "Ver proyecto"
-      }
+      },
+      "link": "https://www.facebook.com/Machupicchuterraoficial/"
     },
     {
       "id": "contenido-vertical",

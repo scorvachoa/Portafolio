@@ -4,58 +4,94 @@
   "description": "Piezas seleccionadas que muestran versatilidad, narrativa y calidad técnica.",
   "videos": [
     {
-      "id": "dQw4w9WgXcQ",
-      "title": "Nombre del Video 1",
-      "category": "Campaña",
-      "duration": "02:30",
+      "id": "1664654291427766",
+      "title": "Reel — Machupicchu Terra",
+      "category": "Facebook Reel",
+      "duration": "00:45",
       "thumbnail": "/assets/video-1.svg",
       "views": "120K",
-      "platform": "youtube"
+      "platform": "facebook",
+      "url": "https://www.facebook.com/reel/1664654291427766"
     },
     {
-      "id": "dQw4w9WgXcQ",
-      "title": "Nombre del Video 2",
-      "category": "Documental",
-      "duration": "08:45",
+      "id": "986491617203818",
+      "title": "Reel — Machupicchu Terra",
+      "category": "Facebook Reel",
+      "duration": "00:45",
       "thumbnail": "/assets/video-2.svg",
       "views": "45K",
-      "platform": "youtube"
+      "platform": "facebook",
+      "url": "https://www.facebook.com/reel/986491617203818"
     },
     {
-      "id": "dQw4w9WgXcQ",
-      "title": "Nombre del Video 3",
-      "category": "Reel",
+      "id": "926137253591742",
+      "title": "Reel — Machupicchu Terra",
+      "category": "Facebook Reel",
       "duration": "00:45",
       "thumbnail": "/assets/video-3.svg",
       "views": "800K",
-      "platform": "tiktok"
+      "platform": "facebook",
+      "url": "https://www.facebook.com/reel/926137253591742"
     },
     {
-      "id": "dQw4w9WgXcQ",
-      "title": "Nombre del Video 4",
-      "category": "Spot",
-      "duration": "01:15",
+      "id": "7529631260981857541",
+      "title": "TikTok — Machupicchu Terra",
+      "category": "TikTok",
+      "duration": "00:30",
       "thumbnail": "/assets/video-4.svg",
       "views": "65K",
-      "platform": "youtube"
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@machupicchuterra/video/7529631260981857541"
     },
     {
-      "id": "dQw4w9WgXcQ",
-      "title": "Nombre del Video 5",
-      "category": "YouTube",
-      "duration": "12:10",
+      "id": "7524812002556988678",
+      "title": "TikTok — Machupicchu Terra",
+      "category": "TikTok",
+      "duration": "00:30",
       "thumbnail": "/assets/video-5.svg",
       "views": "200K",
-      "platform": "youtube"
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@machupicchuterra/video/7524812002556988678"
     },
     {
-      "id": "dQw4w9WgXcQ",
-      "title": "Nombre del Video 6",
-      "category": "Branding",
-      "duration": "03:20",
+      "id": "7524812272972107014",
+      "title": "TikTok — Machupicchu Terra",
+      "category": "TikTok",
+      "duration": "00:30",
       "thumbnail": "/assets/video-6.svg",
       "views": "30K",
-      "platform": "youtube"
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@machupicchuterra/video/7524812272972107014"
+    },
+    {
+      "id": "cQGeCB9vRBE",
+      "title": "Shorts — Machupicchu Terra",
+      "category": "YouTube Short",
+      "duration": "00:30",
+      "thumbnail": "/assets/video-1.svg",
+      "views": "50K",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/shorts/cQGeCB9vRBE"
+    },
+    {
+      "id": "0GInhL4QkBM",
+      "title": "Shorts — Machupicchu Terra",
+      "category": "YouTube Short",
+      "duration": "00:30",
+      "thumbnail": "/assets/video-2.svg",
+      "views": "90K",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/shorts/0GInhL4QkBM"
+    },
+    {
+      "id": "Lw3vpJFyDrM",
+      "title": "Shorts — Machupicchu Terra",
+      "category": "YouTube Short",
+      "duration": "00:30",
+      "thumbnail": "/assets/video-3.svg",
+      "views": "150K",
+      "platform": "youtube",
+      "url": "https://www.youtube.com/shorts/Lw3vpJFyDrM"
     }
   ]
 }

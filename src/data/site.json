@@ -12,7 +12,7 @@
   "email": "scorvachoa@gmail.com",
   "phone": "+51 935 153 926",
   "whatsapp": "935153926",
-  "cvUrl": "/assets/cv.pdf",
+  "cvUrl": "/assets/CV_Smith_Corvacho_Alvarez.pdf",
   "social": {
     "linkedin": "https://www.linkedin.com/in/TU-USUARIO",
     "youtube": "https://www.youtube.com/@TU-USUARIO",
@@ -21,7 +21,7 @@
     "tiktok": "https://www.tiktok.com/@TU-USUARIO"
   },
   "hero": {
-    "video": "/assets/hero.mp4",
+    "image": "/assets/images/hero.png",
     "poster": "/assets/hero-poster.svg",
     "eyebrow": "Portafolio Profesional • Content Creator • Cusco, Perú"
   },

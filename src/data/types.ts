@@ -15,7 +15,7 @@ export interface SiteConfig {
   cvUrl: string;
   social: Record<'linkedin' | 'youtube' | 'instagram' | 'facebook' | 'tiktok', string>;
   hero: {
-    video: string;
+    image: string;
     poster: string;
     eyebrow: string;
   };
@@ -73,6 +73,7 @@ export interface Project {
     id: string;
     label: string;
   };
+  link?: string;
 }
 
 export interface Video {
@@ -82,7 +83,8 @@ export interface Video {
   duration: string;
   thumbnail: string;
   views: string;
-  platform: 'youtube' | 'tiktok' | 'instagram';
+  platform: 'youtube' | 'tiktok' | 'facebook' | 'instagram';
+  url: string;
 }
 
 export interface GalleryItem {

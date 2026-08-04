@@ -1,5 +1,5 @@
 /**
- * Modal de video (YouTube) con <dialog> nativo: accesible y lazy.
+ * Modal de video (YouTube / TikTok / Facebook) con <dialog> nativo: accesible y lazy.
  * Cualquier elemento con [data-video-open] y [data-video-id] abre el modal.
  */
 export function initVideoModal(): void {
@@ -7,8 +7,22 @@ export function initVideoModal(): void {
   const iframe = document.getElementById('video-modal-frame') as HTMLIFrameElement | null;
   if (!dialog || !iframe) return;
 
-  const openVideo = (videoId: string): void => {
-    iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+  const verticalPlatforms = ['tiktok', 'facebook', 'youtube'];
+
+  const embedUrl = (video: { platform: string; id: string; url?: string }): string => {
+    switch (video.platform) {
+      case 'tiktok':
+        return `https://www.tiktok.com/embed/${video.id}?autoplay=1`;
+      case 'facebook':
+        return `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(video.url ?? '')}&show_text=false&autoplay=1&width=420`;
+      default:
+        return `https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&rel=0`;
+    }
+  };
+
+  const openVideo = (video: { platform: string; id: string; url?: string }): void => {
+    iframe.src = embedUrl(video);
+    dialog.classList.toggle('is-vertical', verticalPlatforms.includes(video.platform));
     if (!dialog.open) dialog.showModal();
     document.documentElement.style.overflow = 'hidden';
   };
@@ -22,7 +36,12 @@ export function initVideoModal(): void {
   document.querySelectorAll<HTMLElement>('[data-video-open]').forEach((trigger) => {
     trigger.addEventListener('click', () => {
       const id = trigger.dataset.videoId;
-      if (id) openVideo(id);
+      if (!id) return;
+      openVideo({
+        id,
+        platform: trigger.dataset.videoPlatform ?? 'youtube',
+        url: trigger.dataset.videoUrl,
+      });
     });
   });
 
