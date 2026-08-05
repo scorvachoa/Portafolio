@@ -1,13 +1,31 @@
 {
   "label": "Galería",
-  "title": "Detrás de cámara y fotografía",
-  "description": "Momentos reales del proceso creativo y capturas seleccionadas.",
-  "items": [
-    { "src": "/assets/gallery-1.svg", "thumb": "/assets/gallery-1.svg", "caption": "Detrás de cámara — Rodaje", "category": "BTS" },
-    { "src": "/assets/gallery-2.svg", "thumb": "/assets/gallery-2.svg", "caption": "Set de grabación", "category": "BTS" },
-    { "src": "/assets/gallery-3.svg", "thumb": "/assets/gallery-3.svg", "caption": "Fotografía de producto", "category": "Foto" },
-    { "src": "/assets/gallery-4.svg", "thumb": "/assets/gallery-4.svg", "caption": "Iluminación profesional", "category": "BTS" },
-    { "src": "/assets/gallery-5.svg", "thumb": "/assets/gallery-5.svg", "caption": "Retrato editorial", "category": "Foto" },
-    { "src": "/assets/gallery-6.svg", "thumb": "/assets/gallery-6.svg", "caption": "Locación exterior", "category": "BTS" }
+  "title": "Galería fotográfica",
+  "description": "Fotografías seleccionadas de mis viajes y producciones en Cusco.",
+  "categories": [
+    {
+      "name": "Montaña de Colores",
+      "link": "https://www.tour7colores.com/fotografias-montana-colores/",
+      "items": [
+        { "src": "https://media.machupicchuterra.com/uploads/images/1755297643_t7c-57.jpg", "caption": "Montaña de Colores — Vinicunca", "category": "Montaña de Colores" },
+        { "src": "https://media.machupicchuterra.com/uploads/images/1751661852_t7c-35.jpg", "caption": "Camino hacia la Montaña de Colores", "category": "Montaña de Colores" },
+        { "src": "https://media.machupicchuterra.com/uploads/images/1751661819_t7c-28.jpg", "caption": "Amanecer en la cordillera", "category": "Montaña de Colores" },
+        { "src": "https://media.machupicchuterra.com/uploads/images/1758989870_t7c-81.jpg", "caption": "Vista panorámica de Vinicunca", "category": "Montaña de Colores" },
+        { "src": "https://media.machupicchuterra.com/uploads/images/1749743851_t7c-18.jpg", "caption": "Trekking por la Montaña de Colores", "category": "Montaña de Colores" },
+        { "src": "https://media.machupicchuterra.com/uploads/images/1752533078_t7c-46.jpg", "caption": "Llamas en la Montaña de Colores", "category": "Montaña de Colores" }
+      ]
+    },
+    {
+      "name": "Inti Raymi",
+      "link": "https://www.entradaintiraymi.com/fotos",
+      "items": [
+        { "src": "https://media.machupicchuterra.com/uploads/images/1746479818_ei-1.jpg", "caption": "Inti Raymi — Fiesta del Sol", "category": "Inti Raymi" },
+        { "src": "https://media.machupicchuterra.com/uploads/images/1747262472_ei-plaza-armas-17.jpg", "caption": "Inti Raymi en la Plaza de Armas", "category": "Inti Raymi" },
+        { "src": "https://media.machupicchuterra.com/uploads/images/1747665701_ei-plaza-armas-27.jpg", "caption": "Danza ceremonial en la Plaza de Armas", "category": "Inti Raymi" },
+        { "src": "https://media.machupicchuterra.com/uploads/images/1747166102_ei-sacsayhuaman-06.jpg", "caption": "Inti Raymi en Sacsayhuamán", "category": "Inti Raymi" },
+        { "src": "https://media.machupicchuterra.com/uploads/images/1750889717_ei-sacsayhuaman-22.jpg", "caption": "Ceremonia en Sacsayhuamán", "category": "Inti Raymi" },
+        { "src": "https://media.machupicchuterra.com/uploads/images/1747665759_ei-plaza-armas-29.jpg", "caption": "Atuendos tradicionales del Inti Raymi", "category": "Inti Raymi" }
+      ]
+    }
   ]
 }

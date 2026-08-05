@@ -13,7 +13,7 @@ export interface SiteConfig {
   phone: string;
   whatsapp: string;
   cvUrl: string;
-  social: Record<'linkedin' | 'youtube' | 'instagram' | 'facebook' | 'tiktok', string>;
+  social: Record<'linkedin' | 'youtube' | 'instagram' | 'facebook' | 'tiktok' | 'github', string>;
   hero: {
     image: string;
     poster: string;
@@ -89,9 +89,15 @@ export interface Video {
 
 export interface GalleryItem {
   src: string;
-  thumb: string;
+  thumb?: string;
   caption: string;
   category: string;
+}
+
+export interface GalleryCategory {
+  name: string;
+  link: string;
+  items: GalleryItem[];
 }
 
 export interface Tool {

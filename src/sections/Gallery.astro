@@ -1,6 +1,6 @@
 ---
 /**
- * Galería: masonry con LightGallery y lazy loading.
+ * Galería: categorías con masonry, LightGallery y enlace a la galería completa.
  */
 import gallery from '@/data/gallery.json';
 import { asset } from '@/utils/asset';
@@ -17,43 +17,71 @@ import Icon from '@/components/Icon.astro';
       description={gallery.description}
     />
 
-    <Reveal class="mt-16">
-      {/* Masonry con columnas CSS */}
-      <div id="gallery-lightbox" class="columns-2 gap-4 lg:columns-3 lg:gap-5" data-gallery>
-        {
-          gallery.items.map((item, index) => (
-            <a
-              href={asset(item.src)}
-              data-src={asset(item.src)}
-              data-sub-html={item.caption}
-              class="group relative mb-4 block overflow-hidden rounded-2xl border border-white/8 break-inside-avoid lg:mb-5"
-              data-cursor="hover"
-            >
-              <img
-                src={asset(item.thumb)}
-                alt={item.caption}
-                width="1600"
-                height={index % 2 === 0 ? '1200' : '900'}
-                loading="lazy"
-                class:list={[
-                  'w-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105',
-                  index % 2 === 0 ? 'aspect-[4/5]' : 'aspect-[4/3]',
-                ]}
-              />
+    {
+      gallery.categories.map((cat, ci) => (
+        <div class="mt-16">
+          <Reveal>
+            <div class="mb-6 flex items-center gap-3">
+              <span class="h-px flex-1 bg-white/10" aria-hidden="true" />
+              <h3 class="font-display text-xl font-semibold text-white sm:text-2xl">
+                {cat.name}
+              </h3>
+              <span class="h-px flex-1 bg-white/10" aria-hidden="true" />
+            </div>
+          </Reveal>
 
-              <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" aria-hidden="true" />
+          <Reveal>
+            <div id={`gallery-lightbox-${ci}`} class="columns-2 gap-4 lg:columns-3 lg:gap-5" data-gallery>
+              {
+                cat.items.map((item, index) => (
+                  <a
+                    href={asset(item.src)}
+                    data-src={asset(item.src)}
+                    data-sub-html={item.caption}
+                    class="group relative mb-4 block overflow-hidden rounded-2xl border border-white/8 break-inside-avoid lg:mb-5"
+                    data-cursor="hover"
+                  >
+                    <img
+                      src={asset(item.thumb ?? item.src)}
+                      alt={item.caption}
+                      width="1600"
+                      height={index % 2 === 0 ? '1200' : '900'}
+                      loading="lazy"
+                      class:list={[
+                        'w-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105',
+                        index % 2 === 0 ? 'aspect-[4/5]' : 'aspect-[4/3]',
+                      ]}
+                    />
 
-              <div class="absolute inset-x-0 bottom-0 translate-y-3 p-5 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-                <span class="chip mb-2 !py-0.5 text-[10px]">{item.category}</span>
-                <p class="flex items-center gap-2 font-display text-sm font-medium text-white">
-                  <Icon name="maximize" size={14} class="text-brand" />
-                  {item.caption}
-                </p>
-              </div>
-            </a>
-          ))
-        }
-      </div>
-    </Reveal>
+                    <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" aria-hidden="true" />
+
+                    <div class="absolute inset-x-0 bottom-0 translate-y-3 p-5 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                      <span class="chip mb-2 !py-0.5 text-[10px]">{item.category}</span>
+                      <p class="flex items-center gap-2 font-display text-sm font-medium text-white">
+                        <Icon name="maximize" size={14} class="text-brand" />
+                        {item.caption}
+                      </p>
+                    </div>
+                  </a>
+                ))
+              }
+            </div>
+
+            <div class="mt-8 text-center">
+              <a
+                href={cat.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-full border border-brand/40 bg-brand/10 px-6 py-3 text-sm font-medium text-brand transition-all duration-300 hover:bg-brand hover:text-white"
+                data-cursor="hover"
+              >
+                Ver galería completa
+                <Icon name="external-link" size={16} />
+              </a>
+            </div>
+          </Reveal>
+        </div>
+      ))
+    }
   </div>
 </section>

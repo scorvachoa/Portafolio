@@ -219,11 +219,12 @@
 
   /* Menú móvil */
   #mobile-menu {
+    opacity: 0;
     visibility: hidden;
   }
   #mobile-menu.is-open {
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
   }
 

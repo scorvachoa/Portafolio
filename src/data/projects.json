@@ -19,6 +19,7 @@
         "DaVinci Resolve",
         "CapCut",
         "Adobe Premiere Pro",
+        "Adobe After Effects",
         "Adobe Photoshop",
         "YouTube Studio"
       ],
@@ -65,7 +66,9 @@
       "tools": [
         "DaVinci Resolve",
         "CapCut",
+        "Adobe After Effects",
         "Adobe Photoshop",
+        "Adobe Lightroom",
         "Meta Business Suite"
       ],
       "results": [
@@ -101,7 +104,7 @@
       "client": "Machupicchu Terra",
       "category": "YouTube Shorts & TikTok",
       "title": "Producción de contenido vertical para millones de visualizaciones",
-      "hero": "/assets/project-3.svg",
+      "hero": "/assets/images/tiktok-mt.png",
       "year": "2026",
       "summary": "Creación de contenido vertical orientado a maximizar el alcance orgánico mediante Shorts, Reels y TikTok.",
       "objective": "Incrementar la visibilidad de la marca utilizando formatos de video de alta retención.",
@@ -112,6 +115,8 @@
         "CapCut",
         "DaVinci Resolve",
         "Adobe Premiere Pro",
+        "Adobe After Effects",
+        "YouTube Studio",
         "TikTok Studio"
       ],
       "results": [
@@ -139,7 +144,8 @@
       "video": {
         "id": "REEMPLAZAR_ID",
         "label": "Ver proyecto"
-      }
+      },
+      "link": "https://www.tiktok.com/@machupicchuterra"
     }
   ]
 }
